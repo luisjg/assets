@@ -21,4 +21,4 @@
 
         ——
         Suppress this warning by adding a "data-turbo-suppress-warning" attribute to: %s
-      `,e.outerHTML);e=e.parentElement}})(),window.Turbo=wn,vn(),window.Alpine=Wi,window.addEventListener("DOMContentLoaded",(()=>{Wi.data("currentYear",(()=>({year:(new Date).getFullYear()}))),Wi.data("yearsOfExperience",(()=>({calculateExperience:()=>{const e=(new Date).getFullYear()-2015,t=e/10;return t<1?.5==t?"half a decade":t>.5?"over half a decade":e+" years of experience":t>=1?"over a decade":void 0}}))),Wi.start()}))})();
+      `,e.outerHTML);e=e.parentElement}})(),window.Turbo=wn,vn(),window.Alpine=Wi,window.addEventListener("DOMContentLoaded",(()=>{Wi.data("currentYear",(()=>({year:(new Date).getFullYear()}))),Wi.data("yearsOfExperience",(()=>({calculateExperience:()=>{const e=(new Date).getFullYear()-2015;return e>10?"over a decade":10===e?"a decade":e>5?"over half a decade":5===e?"half a decade":`${e} years of experience`}}))),Wi.start()}))})();
